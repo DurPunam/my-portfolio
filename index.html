@@ -2,101 +2,282 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
+  <title>Durgesh Kumar | Portfolio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Font Awesome 6.5.1 -->
+  <!-- Font Awesome -->
   <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
   />
 
-  <!-- External CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ===== Header ===== -->
-  <header>
-    <a href="#home" class="logo">
-      <i class="fas fa-code logo-icon"></i>
-      <span class="logo-text">Durgesh Kumar</span>
-    </a>
+<!-- ===== Header ===== -->
+<header>
+  <a href="#home" class="logo">
+    <i class="fas fa-code logo-icon"></i>
+    <span class="logo-text">Durgesh Kumar</span>
+  </a>
 
-    <nav>
-     
+  
 
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+  <nav>
+    <div class="menu-toggle">
+    <i class="fas fa-bars"></i>
+  </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-  <!-- ===== Hero Section ===== -->
-  <section class="hero" id="home">
+<!-- ===== Hero Section ===== -->
+<section class="hero" id="home">
 
-    <!-- Left Content -->
-    <div class="content">
-      <h1>Durgesh Kumar</h1>
-      <h2> <span class="typing-text">Student at VIT Chennai</span></h2>
+  <div class="content">
+    <h1>Durgesh Kumar</h1>
+    <h2><span class="typing-text">Student at VIT Chennai</span></h2>
 
+    <p>
+      A tech enthusiast and 2nd-year B.Tech student at VIT Chennai, serving as
+      Secretary of the Code-Y-Gen Club. Passionate about building modern,
+      meaningful digital experiences.
+    </p>
+
+    <div class="cta-buttons">
+      <a href="#projects" class="btn btn-primary">
+        <i class="fas fa-code"></i> View Projects
+      </a>
+      <a href="#contact" class="btn btn-secondary">
+        <i class="fa-regular fa-paper-plane"></i> Contact Me
+      </a>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://github.com/DurPunam"><i class="fa-brands fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/durgesh-kumar-5a0401310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+  </div>
+
+  <div class="profile-container">
+    <div class="border-outer"></div>
+    <div class="border-middle"></div>
+    <div class="border-inner"></div>
+    <div class="border-container"></div>
+
+    <div class="pulse-ring"></div>
+    <div class="pulse-ring"></div>
+    <div class="pulse-ring"></div>
+
+    <img src="image.png" alt="Profile" class="profile-img">
+  </div>
+
+</section>
+
+<!-- ===== About Section ===== -->
+<section class="section" id="about">
+  <h2 class="section-title" style="color: #2afc85;">About Me</h2>
+  <p class="section-text">
+    I’m a passionate and hardworking technology enthusiast who enjoys building
+    modern web experiences. Outside of coding, I love playing the guitar 🎸,
+    solving cubes 🧩, creating music, and playing cricket 🏏.
+    These hobbies shape my discipline, creativity, and focus.
+  </p>
+</section>
+
+<!-- ===== Projects Section ===== -->
+<section class="section" id="projects">
+  <h2 class="section-title" style="color:#2afc85;">Projects</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <h3 style="color:#2afc85;">FitSync</h3>
       <p>
-        A tech enthusiast and 2nd-year B.Tech student at VIT Chennai, I lead as
-        Secretary of the Code-Y-Gen Club. I’m also a Google Arcade program player,
-        constantly exploring new challenges in coding and design.
+        Wellbeing and mindfulness website designed for improving corporate work culture.
+        <a href="https://github.com/DurPunam/fitsync"
+           target="_blank"
+           style="
+             display:inline-flex;
+             align-items:center;
+             justify-content:center;
+             margin-left:10px;
+             width:34px;
+             height: 34px;
+             border-radius:50%;
+             background:linear-gradient(135deg,#1a1f2e,#232838);
+             color:#2afc85;
+             text-decoration:none;
+             transition:all 0.3s ease;
+           "
+           onmouseover="
+             this.style.transform='translateY(-4px) scale(1.1)';
+             this.style.boxShadow='0 8px 20px rgba(42,252,133,0.4)';
+             this.style.background='linear-gradient(45deg,#1ed761,#2afc85,#15c46a)';
+             this.style.color='#151925';
+           "
+           onmouseout="
+             this.style.transform='none';
+             this.style.boxShadow='none';
+             this.style.background='linear-gradient(135deg,#1a1f2e,#232838)';
+             this.style.color='#2afc85';
+           ">
+          <i class="fa-brands fa-github"></i>
+        </a>
       </p>
-
-      <div class="cta-buttons">
-        <a href="#projects" class="btn btn-primary">
-          <i class="fas fa-code"></i> View Projects
-        </a>
-
-        <a href="#contact" class="btn btn-secondary">
-          <i class="fa-regular fa-paper-plane"></i> Contact Me
-        </a>
-      </div>
-
-      <!-- Social Icons -->
-      <div class="social-icons">
-        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
-      </div>
     </div>
 
-    <!-- Right Profile -->
-    <div class="profile-container">
-      <div class="border-outer"></div>
-      <div class="border-middle"></div>
-      <div class="border-inner"></div>
-      <div class="border-container"></div>
-
-      <div class="pulse-ring"></div>
-      <div class="pulse-ring"></div>
-      <div class="pulse-ring"></div>
-
-      <!-- ✅ USE RELATIVE PATH -->
-      <img
-        src="image.png"
-        alt="Profile Picture"
-        class="profile-img"
-        width="240"
-        height="240"
-      >
+    <div class="project-card">
+      <h3 style="color:#2afc85;">SmartTourist</h3>
+      <p>
+        A tourism-focused website that simplifies travel planning and destination discovery.
+        <a href="https://github.com/DurPunam/smarttourist"
+           target="_blank"
+           style="
+             display:inline-flex;
+             align-items:center;
+             justify-content:center;
+             margin-left:10px;
+             width:34px;
+             height:34px;
+             border-radius:50%;
+             background:linear-gradient(135deg,#1a1f2e,#232838);
+             color:#2afc85;
+             text-decoration:none;
+             transition:all 0.3s ease;
+           "
+           onmouseover="
+             this.style.transform='translateY(-4px) scale(1.1)';
+             this.style.boxShadow='0 8px 20px rgba(42,252,133,0.4)';
+             this.style.background='linear-gradient(45deg,#1ed761,#2afc85,#15c46a)';
+             this.style.color='#151925';
+           "
+           onmouseout="
+             this.style.transform='none';
+             this.style.boxShadow='none';
+             this.style.background='linear-gradient(135deg,#1a1f2e,#232838)';
+             this.style.color='#2afc85';
+           ">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </p>
     </div>
 
-  </section>
+    <div class="project-card">
+      <h3 style="color:#2afc85;">Roti Bala</h3>
+      <p>
+        An NGO website aimed at improving outreach and managing social initiatives.
+        <a href="https://github.com/DurPunam/roti-bala-digital-hug"
+           target="_blank"
+           style="
+             display:inline-flex;
+             align-items:center;
+             justify-content:center;
+             margin-left:10px;
+             width:34px;
+             height:34px;
+             border-radius:50%;
+             background:linear-gradient(135deg,#1a1f2e,#232838);
+             color:#2afc85;
+             text-decoration:none;
+             transition:all 0.3s ease;
+           "
+           onmouseover="
+             this.style.transform='translateY(-4px) scale(1.1)';
+             this.style.boxShadow='0 8px 20px rgba(42,252,133,0.4)';
+             this.style.background='linear-gradient(45deg,#1ed761,#2afc85,#15c46a)';
+             this.style.color='#151925';
+           "
+           onmouseout="
+             this.style.transform='none';
+             this.style.boxShadow='none';
+             this.style.background='linear-gradient(135deg,#1a1f2e,#232838)';
+             this.style.color='#2afc85';
+           ">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </p>
+    </div>
 
-  <!-- JavaScript -->
-  <script src="script.js"></script>
+    <div class="project-card">
+      <h3 style="color:#2afc85;">Voyageur Beacon</h3>
+      <p>
+        A website that detects phishing links and provides secure lock storage.
+        <a href="https://github.com/DurPunam/voyager-beacon"
+           target="_blank"
+           style="
+             display:inline-flex;
+             align-items:center;
+             justify-content:center;
+             margin-left:10px;
+             width:34px;
+             height:34px;
+             border-radius:50%;
+             background:linear-gradient(135deg,#1a1f2e,#232838);
+             color:#2afc85;
+             text-decoration:none;
+             transition:all 0.3s ease;
+           "
+           onmouseover="
+             this.style.transform='translateY(-4px) scale(1.1)';
+             this.style.boxShadow='0 8px 20px rgba(42,252,133,0.4)';
+             this.style.background='linear-gradient(45deg,#1ed761,#2afc85,#15c46a)';
+             this.style.color='#151925';
+           "
+           onmouseout="
+             this.style.transform='none';
+             this.style.boxShadow='none';
+             this.style.background='linear-gradient(135deg,#1a1f2e,#232838)';
+             this.style.color='#2afc85';
+           ">
+          <i class="fa-brands fa-github"></i>
+        </a>
+      </p>
+    </div>
 
+  </div>
+</section>
+
+<!-- ===== Skills Section ===== -->
+<section class="section" id="skills">
+  <h2 class="section-title" style="color: #2afc85;">Skills</h2>
+
+  <div class="skills-list">
+    <span>C</span>
+    <span>C++</span>
+    <span>Java</span>
+    <span>Python</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+  </div>
+</section>
+
+<!-- ===== Contact Section ===== -->
+<section class="section" id="contact">
+  <h2 class="section-title" style="color: #2afc85;">Contact</h2>
+  <p class="section-text">
+    Let’s connect and build something meaningful together 🤝
+  </p>
+
+  <div class="social-icons center-icons">
+    <a href="https://www.linkedin.com/in/durgesh-kumar-5a0401310?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://github.com/DurPunam"><i class="fa-brands fa-github"></i></a>
+    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+  </div>
+</section>
+
+<script src="script.js"></script>
 </body>
 </html>
