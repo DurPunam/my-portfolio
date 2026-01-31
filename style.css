@@ -563,11 +563,40 @@ p {
   margin-top: 30px;
 }
 
-/* Skills alignment */
-.section .skills-list {
+/* ===== Skills (Priya-style pills, Durgesh theme) ===== */
+.skills-list {
   margin-top: 40px;
-  font-size: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
 }
+
+.skills-list span {
+  padding: 14px 28px;
+  border-radius: 999px;
+  background: rgba(42, 252, 133, 0.15);
+  color: #2afc85;
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 6px 18px rgba(42, 252, 133, 0.15);
+  transition: all 0.3s ease;
+}
+
+/* Hover effect (subtle, premium) */
+.skills-list span:hover {
+  transform: translateY(-6px) scale(1.05);
+  background: linear-gradient(
+    135deg,
+    #1ed761,
+    #2afc85,
+    #15c46a
+  );
+  color: #0c0f17;
+  box-shadow: 0 12px 30px rgba(42, 252, 133, 0.4);
+}
+
 
 /* Contact social icons center */
 .section .social-icons {
